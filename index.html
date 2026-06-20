@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetRadar AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { background-color: #06060E; color: white; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+
+    <nav class="flex items-center gap-4 px-10 py-10">
+        <img src="assets/logo.png" alt="NetRadar AI logo" class="w-14 h-14 object-contain">
+        <span class="text-3xl font-black tracking-tight text-white">NetRadar AI</span>
+    </nav>
+
+    <main class="flex flex-col lg:flex-row items-center px-10 py-10 gap-12">
+        <div class="flex-1">
+            <h1 class="text-6xl font-extrabold leading-tight text-white mb-6">
+                Real-Time Anomaly <br> 
+                Detection System for<br> 
+                Networks
+            </h1>
+            <p class="text-gray-400 text-lg mb-10 max-w-xl">
+               A powerful AI-driven security system designed to monitor network traffic and detect threats in real-time.
+            </p>
+
+            <div class="flex gap-4 mb-16">
+                <a href="https://github.com/saniaarooj057/NetRadar-AI/releases/download/v1.0/NetRadar.exe" download class="bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-semibold py-3 px-6 rounded-xl flex items-center gap-3 transition-all shadow-lg shadow-purple-900/20 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span class="text-[17px]">Download Monitoring Agent</span>
+                </a>
+            </div>
+
+            <div class="flex flex-col gap-6">
+                <div class="flex gap-8">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-emerald-500/10 p-2 rounded-lg border border-emerald-500/20">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-bold">Decision Tree Powered</p>
+                            <p class="text-gray-500 text-[10px]">Machine Learning Detection</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="bg-emerald-500/10 p-2 rounded-lg border border-emerald-500/20">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-bold">99.43% Accuracy</p>
+                            <p class="text-gray-500 text-[10px]">High-Precision Detection</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-3">
+                    <div class="bg-emerald-500/10 p-2 rounded-lg border border-emerald-500/20">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-white font-bold text-sm">Multi-Class Detection</p>
+                        <p class="text-gray-500 text-xs">DoS, DDoS, PortScan, Bot &amp; more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-1">
+            <div class="relative p-1 rounded-3xl bg-gradient-to-br from-purple-900 to-transparent">
+                <div class="bg-black rounded-3xl overflow-hidden border border-purple-900/50">
+                    <img src="assets/network.jpg" alt="System Preview" class="w-full opacity-80">
+                </div>
+            </div>
+        </div>
+    </main>
+
+<section class="py-24 px-10 bg-[#06060E]">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20" data-aos="fade-down">
+            <h2 class="text-white text-5xl font-bold mb-6">What is NetRadar AI?</h2>
+            <p class="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
+                NetRadar AI is a session-based network intrusion detection system 
+                powered by machine learning. It combines real-time flow analysis 
+                with intelligent threat classification to protect modern networks.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <div class="bg-[#0B0B14] border border-purple-900/30 p-8 rounded-2xl hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-purple-900/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </div>
+                <h3 class="text-white font-bold text-xl mb-4">Real-Time Packet Analysis</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Live network traffic inspection using Scapy with low latency for immediate threat detection.</p>
+            </div>
+
+            <div class="bg-[#0B0B14] border border-purple-900/30 p-8 rounded-2xl hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-purple-900/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                </div>
+                <h3 class="text-white font-bold text-xl mb-4">Flow-Based Metadata Extraction</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Session-based architecture captures 11 network flow features — metadata only, no raw packet contents.</p>
+            </div>
+
+            <div class="bg-[#0B0B14] border border-purple-900/30 p-8 rounded-2xl hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                <div class="bg-purple-900/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12L2.5 6.5"/><path d="M12 12l5 8.5"/><path d="M12 12l5-8.5"/></svg>
+                </div>
+                <h3 class="text-white font-bold text-xl mb-4">ML Threat Classification</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">A Decision Tree model trained on the CIC-IDS-2017 dataset classifies each flow for accurate attack prediction.</p>
+            </div>
+
+            <div class="bg-[#0B0B14] border border-purple-900/30 p-8 rounded-2xl hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                <div class="bg-purple-900/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <h3 class="text-white font-bold text-xl mb-4">Lightweight Desktop App</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Runs locally as a desktop application — no data sent to the cloud, privacy-friendly by design.</p>
+            </div>
+        </div>
+
+        <div class="bg-[#0B0B14] border border-purple-900/20 rounded-3xl p-10 flex flex-wrap justify-around items-center text-center gap-8 shadow-2xl shadow-purple-500/5" data-aos="zoom-in" data-aos-delay="500">
+            <div>
+                <p class="text-emerald-400 text-4xl font-bold mb-2">Real-Time</p>
+                <p class="text-gray-500 text-sm uppercase tracking-widest font-semibold">Live Flow Classification</p>
+            </div>
+            <div class="w-px h-16 bg-gray-800 hidden lg:block"></div>
+            <div>
+                <p class="text-emerald-400 text-4xl font-bold mb-2">Local</p>
+                <p class="text-gray-500 text-sm uppercase tracking-widest font-semibold">No Data Sent to Cloud</p>
+            </div>
+            <div class="w-px h-16 bg-gray-800 hidden lg:block"></div>
+            <div>
+                <p class="text-emerald-400 text-4xl font-bold mb-2">Metadata-Only</p>
+                <p class="text-gray-500 text-sm uppercase tracking-widest font-semibold">Works on Encrypted Traffic</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 px-10 bg-[#06060E]">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-24" data-aos="fade-down">
+            <h2 class="text-white text-5xl font-bold mb-6">How It Works</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+                NetRadar AI uses a four-stage pipeline for network threat detection
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20 relative">
+            <div class="relative group" data-aos="fade-right" data-aos-delay="100">
+                <div class="absolute -top-4 -left-3 bg-[#5A32A3] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold z-30 text-xs shadow-lg">1</div>
+                <div class="bg-[#0B0B14] border border-purple-500/20 p-8 rounded-2xl h-full flex flex-col items-center text-center relative z-10 group-hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-[#1A1A2E] p-4 rounded-xl mb-6 border border-emerald-500/30">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-4">Scapy Packet Capture</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Live network traffic interception and real-time packet sniffing using the Scapy library</p>
+                </div>
+                <div class="hidden lg:flex absolute top-1/2 -right-6 -translate-y-1/2 z-20">
+                    <div class="bg-[#05110E] border border-emerald-500/30 rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group" data-aos="fade-right" data-aos-delay="300">
+                <div class="absolute -top-4 -left-3 bg-[#5A32A3] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold z-30 text-xs shadow-lg">2</div>
+                <div class="bg-[#0B0B14] border border-purple-500/20 p-8 rounded-2xl h-full flex flex-col items-center text-center relative z-10 group-hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-[#1A1A2E] p-4 rounded-xl mb-6 border border-emerald-500/30 text-emerald-500">
+                        <span class="text-2xl font-mono font-bold">{}</span>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-4">Feature Extraction</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Flow-based metadata extraction capturing 11 features — packet counts, byte counts, timing and size statistics</p>
+                </div>
+                <div class="hidden lg:flex absolute top-1/2 -right-6 -translate-y-1/2 z-20">
+                    <div class="bg-[#05110E] border border-emerald-500/30 rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group" data-aos="fade-right" data-aos-delay="500">
+                <div class="absolute -top-4 -left-3 bg-[#5A32A3] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold z-30 text-xs shadow-lg">3</div>
+                <div class="bg-[#0B0B14] border border-purple-500/20 p-8 rounded-2xl h-full flex flex-col items-center text-center relative z-10 group-hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-[#1A1A2E] p-4 rounded-xl mb-6 border border-emerald-500/30">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V12a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-4">ML Model Prediction</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Decision Tree classification engine analyzes the extracted features to identify potential threats</p>
+                </div>
+                <div class="hidden lg:flex absolute top-1/2 -right-6 -translate-y-1/2 z-20">
+                    <div class="bg-[#05110E] border border-emerald-500/30 rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group" data-aos="fade-right" data-aos-delay="700">
+                <div class="absolute -top-4 -left-3 bg-[#5A32A3] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold z-30 text-xs shadow-lg">4</div>
+                <div class="bg-[#0B0B14] border border-purple-500/20 p-8 rounded-2xl h-full flex flex-col items-center text-center relative z-10 group-hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-[#1A1A2E] p-4 rounded-xl mb-6 border border-emerald-500/30">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17l-6-6-4 4-5-5"/></svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-4">Threat Classification</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Real-time dashboard visualization with attack type classification, confidence scores, and automated alerts</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center" data-aos="zoom-in" data-aos-delay="900">
+            <div class="bg-[#0B0B14] border border-purple-500/40 px-8 py-3 rounded-full shadow-lg shadow-purple-500/5">
+                <p class="text-sm">
+                    <span class="text-emerald-500 font-bold">Detection:</span> 
+                    <span class="text-white font-bold ml-1">Per completed flow</span> 
+                    <span class="text-gray-500 mx-2">•</span> 
+                    <span class="text-gray-300">Real-time threat identification</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 px-10 bg-[#06060E]">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-down">
+            <h2 class="text-white text-5xl font-bold mb-4">Research &amp; Performance</h2>
+            <p class="text-gray-400 text-lg mb-8">Benchmark results from the model comparison phase</p>
+            <div class="inline-block bg-purple-900/20 border border-purple-500/30 px-6 py-2 rounded-full">
+                <span class="text-purple-400 text-sm font-medium">Final Year Project — AI Network Security</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-[#0B0B14] border border-purple-900/20 p-10 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="inline-flex p-3 rounded-xl bg-emerald-500/10 text-emerald-500 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                </div>
+                <div class="text-white text-5xl font-bold mb-2">99.43%</div>
+                <div class="text-emerald-500 font-bold mb-2 uppercase text-xs tracking-wider">Overall Accuracy</div>
+                <p class="text-gray-500 text-sm">High precision in threat classification</p>
+            </div>
+
+            <div class="bg-[#0B0B14] border border-purple-900/20 p-10 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="inline-flex p-3 rounded-xl bg-emerald-500/10 text-emerald-500 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="text-white text-5xl font-bold mb-2">98.38%</div>
+                <div class="text-emerald-500 font-bold mb-2 uppercase text-xs tracking-wider">Recall</div>
+                <p class="text-gray-500 text-sm">Catches almost all real attacks</p>
+            </div>
+
+            <div class="bg-[#0B0B14] border border-purple-900/20 p-10 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="inline-flex p-3 rounded-xl bg-emerald-500/10 text-emerald-500 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                </div>
+                <div class="text-white text-5xl font-bold mb-2">85.45%</div>
+                <div class="text-emerald-500 font-bold mb-2 uppercase text-xs tracking-wider">Precision</div>
+                <p class="text-gray-500 text-sm">Flagged threats that were real attacks</p>
+            </div>
+        </div>
+
+        <div class="text-center mb-10" data-aos="zoom-in">
+            <p class="text-gray-500 text-sm">
+                Trained on the <span class="text-gray-300">CIC-IDS-2017 dataset</span> using <span class="text-white font-bold">11 flow features</span> across <span class="text-white font-bold">6 traffic classes</span>
+            </p>
+        </div>
+        
+        <div class="bg-[#0B0B14] border border-purple-900/20 p-10 rounded-2xl border-l-[6px] border-r-[6px] border-l-purple-600 border-r-purple-600 shadow-lg shadow-purple-900/10" data-aos="fade-up">
+            <p class="text-gray-400 text-center text-lg leading-relaxed max-w-4xl mx-auto">
+                NetRadar AI compared a Decision Tree (manual feature selection), a Decision Tree with LDA, and a GAN model. 
+                <span class="text-emerald-500 font-semibold">The Decision Tree with 11 features performed best (99.43% accuracy)</span> 
+                and was selected for real-time deployment.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 px-10 bg-[#06060E]">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20" data-aos="fade-down">
+            <h2 class="text-white text-4xl font-bold">How to Use NetRadar AI</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="relative group" data-aos="fade-up" data-aos-delay="100">
+                <div class="absolute -top-5 left-8 w-10 h-10 bg-[#5A32A3] text-white rounded-full flex items-center justify-center font-bold z-20 shadow-[0_0_15px_rgba(90,50,163,0.6)]">1</div>
+                <div class="bg-[#0B0B14] border border-purple-900/20 p-10 pt-12 rounded-3xl h-full flex flex-col justify-between hover:border-purple-500/30 hover:-translate-y-2 transition-all duration-300">
+                    <div>
+                        <h3 class="text-white font-bold text-xl mb-4">Install NetRadar AI</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-8">Run the application as Administrator and ensure Npcap is installed for packet capture.</p>
+                    </div>
+                    <div class="text-emerald-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group" data-aos="fade-up" data-aos-delay="200">
+                <div class="absolute -top-5 left-8 w-10 h-10 bg-[#5A32A3] text-white rounded-full flex items-center justify-center font-bold z-20 shadow-[0_0_15px_rgba(90,50,163,0.6)]">2</div>
+                <div class="bg-[#0B0B14] border border-purple-900/20 p-10 pt-12 rounded-3xl h-full flex flex-col justify-between hover:border-purple-500/30 hover:-translate-y-2 transition-all duration-300">
+                    <div>
+                        <h3 class="text-white font-bold text-xl mb-4">Start Live Scan</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-8">Launch the application and begin real-time network monitoring with one click.</p>
+                    </div>
+                    <div class="text-emerald-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group" data-aos="fade-up" data-aos-delay="300">
+                <div class="absolute -top-5 left-8 w-10 h-10 bg-[#5A32A3] text-white rounded-full flex items-center justify-center font-bold z-20 shadow-[0_0_15px_rgba(90,50,163,0.6)]">3</div>
+                <div class="bg-[#0B0B14] border border-purple-900/20 p-10 pt-12 rounded-3xl h-full flex flex-col justify-between hover:border-purple-500/30 hover:-translate-y-2 transition-all duration-300">
+                    <div>
+                        <h3 class="text-white font-bold text-xl mb-4">Monitor Threats</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-8">View threat classifications, attack types, and confidence scores in the dashboard.</p>
+                    </div>
+                    <div class="text-emerald-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-32 px-10 bg-[#06060E] border-t border-purple-900/20">
+    <div class="max-w-7xl mx-auto text-center">
+        <div data-aos="fade-down">
+            <h2 class="text-white text-5xl font-bold mb-4">Download NetRadar AI for Windows</h2>
+            <p class="text-gray-400 text-lg mb-12">Real-time network intrusion detection for your local network</p>
+        </div>
+
+        <div class="mb-6" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://github.com/saniaarooj057/NetRadar-AI/releases/download/v1.0/NetRadar.exe" download
+               class="inline-flex items-center bg-[#5A32A3] hover:bg-[#6b3bc4] active:scale-95 active:translate-y-1 text-white font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-[0_0_30px_rgba(90,50,163,0.5)] group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 group-hover:translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Download NetRadar-AI.exe
+            </a>
+        </div>
+
+        <p class="text-gray-500 text-sm mb-20" data-aos="fade-up" data-aos-delay="300">
+            Windows desktop application • Final Year Project 2026
+        </p>
+
+        <div class="max-w-2xl mx-auto bg-[#0B0B14] border border-purple-900/30 rounded-3xl p-10 relative overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="text-white text-xl font-bold mb-8">System Requirements</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12 text-left">
+                <div class="flex items-center space-x-4 hover:translate-x-2 transition-transform duration-300">
+                    <div class="text-emerald-500 bg-emerald-500/10 p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <span class="text-gray-400">Windows 10/11 (64-bit)</span>
+                </div>
+
+                <div class="flex items-center space-x-4 hover:translate-x-2 transition-transform duration-300">
+                    <div class="text-emerald-500 bg-emerald-500/10 p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="15" x2="23" y2="15"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="15" x2="4" y2="15"/></svg>
+                    </div>
+                    <span class="text-gray-400">Npcap installed</span>
+                </div>
+
+                <div class="flex items-center space-x-4 hover:translate-x-2 transition-transform duration-300">
+                    <div class="text-emerald-500 bg-emerald-500/10 p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 19v2M10 19v2M14 19v2M18 19v2M8 11V9M12 11V9M16 11V9M3 5v14h18V5H3z"/></svg>
+                    </div>
+                    <span class="text-gray-400">4GB RAM minimum</span>
+                </div>
+
+                <div class="flex items-center space-x-4 hover:translate-x-2 transition-transform duration-300">
+                    <div class="text-emerald-500 bg-emerald-500/10 p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M22 12L2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 002 2h16a2 2 0 002-2v-6l-3.45-6.89A2 2 0 0016.76 4H7.24a2 2 0 00-1.79 1.11z"/><line x1="6" y1="16" x2="6.01" y2="16"/><line x1="10" y1="16" x2="10.01" y2="16"/></svg>
+                    </div>
+                    <span class="text-gray-400">Administrator privileges</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-[#05010d] text-gray-400 py-16 px-6 font-sans border-t border-purple-900/20">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+      <div class="md:col-span-6 lg:col-span-5">
+        <h2 class="text-white text-xl font-bold mb-4">NetRadar AI</h2>
+        <p class="text-sm leading-relaxed max-w-md">
+          AI-powered network intrusion detection system. 
+          Built as a Final Year Project for real-time threat detection 
+          using machine learning on network flow metadata.
+        </p>
+        
+        <div class="flex space-x-3 mt-6">
+          <a href="#" class="p-2 rounded-lg bg-[#110c1d] border border-purple-900/30 hover:border-cyan-400 transition-colors group">
+            <svg class="w-5 h-5 text-cyan-400/80 group-hover:text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="#" class="p-2 rounded-lg bg-[#110c1d] border border-purple-900/30 hover:border-cyan-400 transition-colors group">
+            <svg class="w-5 h-5 text-cyan-400/80 group-hover:text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="#" class="p-2 rounded-lg bg-[#110c1d] border border-purple-900/30 hover:border-cyan-400 transition-colors group">
+            <svg class="w-5 h-5 text-cyan-400/80 group-hover:text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+          <a href="#" class="p-2 rounded-lg bg-[#110c1d] border border-purple-900/30 hover:border-cyan-400 transition-colors group">
+            <svg class="w-5 h-5 text-cyan-400/80 group-hover:text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="md:col-span-3 lg:col-span-3">
+        <h3 class="text-white font-semibold mb-4">Product</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Architecture</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Research Report</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Release Notes</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3 lg:col-span-3">
+        <h3 class="text-white font-semibold mb-4">Legal</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Support</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-8 border-t border-purple-900/20 text-center text-xs tracking-wide">
+      © 2026 NetRadar AI. All rights reserved. Final Year Project — AI Network Security.
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true, offset: 120 });
+    </script>
+</body>
+</html>
